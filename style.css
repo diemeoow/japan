@@ -182,8 +182,7 @@ header {
 }
 
 .nav_link.active {
-    backdrop-filter: blur(10px);
-    background: #74747442;
+    color: #ffa1af;
 }
 
 /* Nav toggle */
@@ -686,7 +685,8 @@ header {
         top: 100%;
         left: 0;
 
-        background-color: #E25A6F;
+        backdrop-filter: blur(10px);
+        background: #74747442;
     }
 
     .nav.active {
