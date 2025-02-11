@@ -182,7 +182,8 @@ header {
 }
 
 .nav_link.active {
-    color: #ffa1af;
+    backdrop-filter: blur(10px);
+    background: #74747442;
 }
 
 /* Nav toggle */
