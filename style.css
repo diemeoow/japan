@@ -686,7 +686,7 @@ header {
         left: 0;
 
         backdrop-filter: blur(10px);
-        background: #74747442;
+        background-color: #74747442;
     }
 
     .nav.active {
