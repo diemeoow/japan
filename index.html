@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pic/Untitled.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Япония</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        defer></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner" >
+                <div class="logo" data-scroll="#intro">
+                    <a href="index.html">
+                        <img src="pic/Untitled.png" alt="Japan Logo" class="logo">
+                    </a>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav_link" data-scroll="#history">История</a>
+                    <a href="#" class="nav_link" data-scroll="#culture">Культура</a>
+                    <a href="#" class="nav_link" data-scroll="#language">Язык</a>
+                    <a href="#" class="nav_link" data-scroll="#about">О стране</a>
+                </nav>
+                <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle_item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="intro" id="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <h1 class="intro__title">Добро пожаловать в Японию!</h1>
+                </div>
+            </div>
+        </div><!-- /.intro -->
+        <section class="section" id="history">
+            <div class="container">
+
+                <div class="section__header">
+                    <h2 class="section__title">История Японии</h2>
+                    <div class="section__text">
+                        <p>Века назад Япония была изолированным островом, где развивались уникальная культура и
+                            традиции. В 6 веке нашей эры началось формирование японского государства под влиянием
+                            китайской культуры. В 12-16 веках Япония пережила период феодальных войн, известный как
+                            эпоха Сэнгоку, когда сильные военные династии боролись за власть.</p>
+                        <p>В 17 веке Япония пережила период изоляции, когда власть ограничивала контакты с внешним
+                            миром. Однако в 19 веке страну потрясла эра Мэйдзи, когда были проведены реформы,
+                            направленные на модернизацию и открытие Японии для западных влияний.</p>
+                        <p>В начале 20 века Япония активно включилась в мировую политику и столкнулась с войной. После
+                            Второй мировой войны страна пережила период восстановления, став одной из крупнейших
+                            экономических держав мира.</p>
+                        <p>Сегодня Япония известна своим современным обликом, инновациями и уникальной смесью традиций и
+                            современности, что делает ее захватывающим объектом изучения и увлечения для многих.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="pic/edo.jpg" alt="">
+                            </div>
+                            <div class="card__text">Эпоха Сегоку</div>
+                        </div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="pic/eidzi.jpg" alt="">
+                            </div>
+                            <div class="card__text">Эпоха Мэйдзи</div>
+                        </div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="pic/www.jpg" alt="">
+                            </div>
+                            <div class="card__text">Вторая Мировая Война</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </section>
+    </div>
+    <!--Culture-->
+    <section class="section" id="culture">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">А теперь перейдем к...</h3>
+                <h2 class="section__title">культуре японии!</h2>
+                <div class="section__text">
+                    <p>Культура Японии богата традициями, которые переживают историю и живут в современном мире через
+                        искусство, театр, и ритуалы, отражая её уникальную красоту и глубокие ценности.</p>
+                </div>
+            </div>
+
+            <div class="culture">
+                <div class="culture__item  culture__item--border">
+                    <img class="culture__icon" src="pic/icons8-чай-40.png" alt="">
+
+                    <div class="culture__title">Искусство чая (茶道)</div>
+                    <div class="culture__text">Японская чайная церемония - это не только способ приготовления и
+                        употребления чая, но и глубокая философия, символизирующая гармонию, простоту и красоту..</div>
+                </div>
+                <div class="culture__item  culture__item--border">
+                    <img class="culture__icon" src="pic/icons8-икебана-40.png" alt="">
+
+                    <div class="culture__title">Икебана (生け花)</div>
+                    <div class="culture__text">Икебана - это японское искусство аранжировки цветов, в котором каждый
+                        элемент имеет свой символический смысл. Это не просто композиция цветов, а способ выражения
+                        гармонии и баланса.</div>
+                </div>
+                <div class="culture__item  culture__item--border">
+                    <img class="culture__icon" src="pic/icons8-сейлор-мун-40.png" alt="">
+
+                    <div class="culture__title">Манга (漫画)</div>
+                    <div class="culture__text">Японская манга - это популярный жанр комиксов, известный своим
+                        разнообразием тематики, от фэнтези до научной фантастики, и разнообразием стилей рисования.
+                    </div>
+                </div>
+                <div class="culture__item">
+                    <img class="culture__icon" src="pic/icons8-сакура-40.png" alt="">
+
+                    <div class="culture__title">Сакура (桜)</div>
+                    <div class="culture__text">Цветение сакуры - это одно из самых важных явлений в японской культуре,
+                        символизирующее красоту, нежность и кратковременность жизни.</div>
+                </div>
+                <div class="culture__item">
+                    <img class="culture__icon" src="pic/icons8-кимоно-40.png" alt="">
+
+                    <div class="culture__title">Кимоно (着物)</div>
+                    <div class="culture__text">Традиционная японская одежда, кимоно, представляет собой символ
+                        элегантности и изысканности, а также сочетания традиционных и современных элементов.</div>
+                </div>
+                <div class="culture__item">
+                    <img class="culture__icon" src="pic/icons8-театральные-маски-40.png" alt="">
+
+                    <div class="culture__title">Кабуки (歌舞伎)</div>
+                    <div class="culture__text">Японский театральный жанр, в котором актеры используют живописные
+                        костюмы, яркий макияж и выразительные жесты для передачи сюжета и эмоций.</div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </section>
+    <!-- language -->
+    <section class="section" id="language">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">日本語</h3>
+                <h2 class="section__title">японский язык</h2>
+                <div class="section__text">
+                    <p>Японский язык является уникальным и сложным, он включает три системы письма: кандзи (иероглифы),
+                        хирагану и катакану. Хирагана и катакана — это слоговые алфавиты, а кандзи заимствованы из
+                        китайских иероглифов и представляют собой идеограммы. Японский язык также богат различными
+                        уровнями вежливости и уважения, что отражает важность социальных отношений в японской культуре.
+                    </p>
+                </div>
+            </div>
+
+            <div class="language">
+                <div class="language__item">
+                    <img class="language__img" src="pic/scale_1200.jpg" alt="">
+                </div>
+
+                <div class="language__item">
+
+                    <div class="accordion">
+                        <div class="accordion__item" data-collapse="#language_1">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="pic/icons8-веер-2-40.png" alt="">
+                                <div class="accordion__title">Кандзи (漢字)</div>
+                            </div>
+                            <div class="accordion__content" id="language_1">
+                                <p>Кандзи - это иероглифы, заимствованные из китайского языка. Каждый иероглиф
+                                    представляет собой слово или часть слова и имеет собственное значение. В Японии
+                                    используются тысячи кандзи, каждый из которых может иметь несколько чтений и
+                                    значений.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item active" data-collapse="#language_2">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="pic/icons8-меч-катана-40.png" alt="">
+                                <div class="accordion__title">Хирагана (ひらがな)</div>
+                            </div>
+                            <div class="accordion__content" id="language_2">
+                                <p>Хирагана - это слоговая азбука, состоящая из 46 символов, которая используется для
+                                    записи грамматических частей слов, а также для написания слов японского
+                                    происхождения. Хирагана часто используется для начальных учебников и литературы для
+                                    детей.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-collapse="#language_3">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="pic/icons8-гэта-40.png" alt="">
+                                <div class="accordion__title">Катакана (カタカナ)</div>
+                            </div>
+                            <div class="accordion__content" id="language_3">
+                                <p>Катакана также состоит из 46 символов и используется для записи иностранных слов,
+                                    имён, научных терминов и звуков. Этот алфавит имеет более угловатую и простую форму
+                                    по сравнению с хираганой.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.accordion -->
+
+                </div><!-- /.language__item -->
+            </div><!-- /.language -->
+
+        </div>
+    </section>
+    <!-- about country -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">А что же с Японией...</h3>
+                <h2 class="section__title">сейчас?</h2>
+                <div class="section__text">
+                    <p>Сегодня Япония - одна из ведущих экономических держав мира, известная своими высокими
+                        технологиями, инновациями и мощной промышленностью. Страна активно развивает сферы
+                        робототехники, автомобилестроения и электроники. Япония также славится своим высоким уровнем
+                        жизни, передовыми медицинскими услугами и долгожительством населения. Культурная жизнь
+                        процветает, с богатым наследием, сочетающим традиционные искусства и современные течения.
+                        Внешняя политика страны направлена на мирное сотрудничество и развитие международных отношений.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about__col">
+                <div class="about__item">
+                    <img class="about__image" src="pic/vorota.jpg" alt="">
+                    <div class="about__info">
+                    <div class="about__title"></div>
+                    <div class="about__text"></div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img class="about__image" src="pic/koty.jpg" alt="">
+
+                    <div class="about__info">
+                        <div class="about__title"></div>
+                        <div class="about__text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__col">
+                <div class="about__item">
+                    <img class="about__image" src="pic/vulkan.jpg" alt="">
+                    <div class="about__info">
+                    <div class="about__title"></div>
+                    <div class="about__text"></div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img class="about__image" src="pic/gorod.jpg" alt="">
+                    <div class="about__info">
+                        <div class="about__title"></div>
+                        <div class="about__text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__col">
+                <div class="about__item">
+                    <img class="about__image" src="pic/plantatsiia.jpg" alt="">
+                    <div class="about__info">
+                        <div class="about__title"></div>
+                        <div class="about__text"></div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img class="about__image" src="pic/zdaniia.jpg" alt="">
+                    <div class="about__info">
+                        <div class="about__title"></div>
+                        <div class="about__text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__col">
+                <div class="about__item">
+                    <img class="about__image" src="pic/iaponiia1.jpg" alt="">
+                    <div class="about__info">
+                        <div class="about__title"></div>
+                        <div class="about__text"></div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img class="about__image" src="pic/gejshi-s-veerami.jpeg" alt="">
+                    <div class="about__info">
+                        <div class="about__title"></div>
+                        <div class="about__text"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.about -->
+    </section>
+
+    <footer>
+        <div class="copyright">
+            © 2024 by <span>mario^^</span>
+        </div>
+    </footer>
+</body>
+
+</html>
