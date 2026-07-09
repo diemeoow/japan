@@ -1,69 +1,86 @@
-$(function () {
-    var header = $("#header"),
-        introH = $("#intro").innerHeight(),
-        scrollOffset = $(window).scrollTop();
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.getElementById("header");
+    const intro = document.getElementById("intro");
+    const nav = document.getElementById("nav");
+    const navToggle = document.getElementById("nav_toggle");
 
-    /* Fixed Header */
+    let introH = intro.offsetHeight;
+    let scrollOffset = window.scrollY;
+
+    // Проверяем положение страницы сразу после загрузки
     checkScroll(scrollOffset);
 
-    $(window).on("scroll", function () {
-        scrollOffset = $(this).scrollTop();
+    // Отслеживаем изменение размера окна
+    window.addEventListener("resize", () => {
+        introH = intro.offsetHeight;
+    });
 
+    // Отслеживаем прокрутку страницы
+    window.addEventListener("scroll", () => {
+        scrollOffset = window.scrollY;
         checkScroll(scrollOffset);
     });
 
+    // Функция закрепления шапки
     function checkScroll(scrollOffset) {
         if (scrollOffset >= introH) {
-            header.addClass("fixed");
+            header.classList.add("fixed");
         } else {
-            header.removeClass("fixed");
+            header.classList.remove("fixed");
         }
     }
 
-    /* Smooth scroll */
-    $("[data-scroll]").on("click", function (event) {
+    // Плавная прокрутка
+    document.querySelectorAll("[data-scroll]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const blockId = link.dataset.scroll;
+            const block = document.querySelector(blockId);
+
+            if (block) {
+                nav.querySelectorAll("a").forEach((item) => {
+                    item.classList.remove("active");
+                });
+
+                link.classList.add("active");
+
+                window.scrollTo({
+                    top: block.offsetTop,
+                    behavior: "smooth",
+                });
+            }
+        });
+    });
+
+    // Открытие и закрытие меню
+    navToggle.addEventListener("click", (event) => {
         event.preventDefault();
 
-        var $this = $(this),
-            blockId = $this.data("scroll"),
-            blockOffset = $(blockId).offset().top;
-
-        if ($(blockId).length) {
-            $("#nav a").removeClass("active");
-            $this.addClass("active");
-
-            $("html, body").animate(
-                {
-                    scrollTop: blockOffset,
-                },
-                500,
-            );
-        }
+        navToggle.classList.toggle("active");
+        nav.classList.toggle("active");
     });
 
-    /* Menu nav toggle */
-    $("#nav_toggle").on("click", function (event) {
-        event.preventDefault();
+    // Аккордеон
+    document.querySelectorAll("[data-collapse]").forEach((button) => {
+        button.addEventListener("click", (event) => {
+            event.preventDefault();
 
-        $(this).toggleClass("active");
-        $("#nav").toggleClass("active");
+            const parent = button.closest(".accordion__item");
+
+            if (parent) {
+                parent.classList.toggle("active");
+            }
+        });
     });
 
-    /* Collapse */
-    $("[data-collapse]").on("click", function (event) {
-        event.preventDefault();
-
-        var $this = $(this),
-            parentItem = $this.closest(".accordion__item");
-
-        parentItem.toggleClass("active");
-    });
-
-    /* Slider */
-    $("[data-slider]").slick({
-        infinite: true,
-        fade: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    });
+    // Slick Slider
+    if (typeof $ !== "undefined" && $.fn.slick) {
+        $("[data-slider]").slick({
+            infinite: true,
+            fade: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    }
 });
