@@ -2,6 +2,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/diemeoow/japan)](https://github.com/diemeoow/japan/commits/main)
 [![GitHub license](https://img.shields.io/github/license/diemeoow/japan)](https://github.com/diemeoow/japan/blob/main/LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/demo-online-green)](https://diemeoow.github.io/japan)
+[![GitHub stars](https://img.shields.io/github/stars/diemeoow/japan)](https://github.com/diemeoow/japan/stargazers)
 
 Одностраничный сайт (лендинг), посвящённый Японии: её истории, культуре, языку и современности. Сделан на чистом HTML, CSS и JavaScript.
 
