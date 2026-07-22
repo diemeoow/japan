@@ -18,8 +18,9 @@
 - **О стране** — Япония сегодня: технологии, экономика, уровень жизни
 
 ## Технологии
-
-<img src="https://skillicons.dev/icons?i=html,css,js" />
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-007ACC?style=for-the-badge&logo=css&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-F7DF4E?style=for-the-badge&logo=javascript&logoColor=white)
 
 - [Slick Carousel](https://kenwheeler.github.io/slick/) — карусели/слайдеры
 - [Font Awesome](https://fontawesome.com/) — иконки
